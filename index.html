@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>XV Años Sofía Guadalupe González Hernández</title>
+
+<meta name="description" content="Acompáñanos a celebrar los XV años de Sofía Guadalupe González Hernández, una noche llena de magia, sueños y recuerdos inolvidables.">
+
+<meta property="og:title" content="XV Años Sofía Guadalupe González Hernández">
+<meta property="og:description" content="Acompáñanos a celebrar una noche de cuento el 27 de junio de 2026 en Jáltipan, Veracruz.">
+<meta property="og:image" content="images/preview.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XV Años Sofía Guadalupe González Hernández">
+<meta name="twitter:description" content="Acompáñanos a celebrar una noche de cuento el 27 de junio de 2026 en Jáltipan, Veracruz.">
+<meta name="twitter:image" content="images/preview.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --gold:#D4AF37;
+    --red:#8B0000;
+    --blue:#1E3A8A;
+    --cream:#F8F4E8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cinzel', serif;
+    background:var(--cream);
+    color:#222;
+}
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.58)),
+        url('images/hero.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,.04),
+            transparent 35%
+        ),
+        linear-gradient(
+            rgba(6,12,32,.20),
+            rgba(6,12,32,.38)
+        );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+    animation:fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:translateY(-40px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(-80px);
+}
+
+}
+
+.subtitle{
+    color:var(--gold);
+    font-size:1.35rem;
+    letter-spacing:6px;
+    margin-bottom:38px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.5),
+        0 0 18px rgba(212,175,55,.3);
+}
+
+.name{
+    margin:0;
+    text-align:center;
+}
+
+.first-name{
+    display:block;
+    font-family:'Great Vibes', cursive;
+    font-size:7rem;
+    font-weight:400;
+    line-height:.8;
+    color:#f6d978;
+
+    text-shadow:
+        0 0 8px rgba(255,248,220,.55),
+        0 0 18px rgba(212,175,55,.55),
+        0 0 35px rgba(212,175,55,.35);
+}
+
+.last-name{
+    display:block;
+    margin-top:18px;
+    font-family:'Cinzel', serif;
+    font-size:2.1rem;
+    font-weight:600;
+    letter-spacing:11px;
+    text-transform:uppercase;
+    color:#fff8dc;
+
+    text-shadow:
+        0 0 8px rgba(255,248,220,.45),
+        0 0 18px rgba(212,175,55,.35);
+}
+
+
+.date{
+    font-size:1.2rem;
+}
+
+.section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--red);
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.message{
+    text-align:center;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.countdown-section{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(5,10,30,.88),
+            rgba(5,10,30,.94)
+        ),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.countdown-section::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,175,55,.16),
+            transparent 55%
+        );
+}
+
+.countdown-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.countdown-title{
+    color:var(--gold);
+    text-shadow:
+        0 0 8px rgba(212,175,55,.6),
+        0 0 18px rgba(212,175,55,.35);
+}
+
+.countdown-subtitle{
+    text-align:center;
+    margin-top:-25px;
+    margin-bottom:35px;
+    color:#fff8dc;
+    font-size:1rem;
+    letter-spacing:1px;
+}
+
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:18px;
+    max-width:760px;
+    margin:0 auto;
+}
+
+.box{
+    width:100%;
+    padding:26px 15px;
+    text-align:center;
+    border-radius:22px;
+    border:1px solid rgba(212,175,55,.75);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    color:#f6d978;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        inset 0 0 18px rgba(212,175,55,.08);
+}
+
+.box span{
+    display:block;
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.7rem;
+    color:#fff8dc;
+    font-weight:600;
+    margin-bottom:5px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.55),
+        0 0 18px rgba(212,175,55,.35);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    margin-top:20px;
+}
+
+.card{
+    position:relative;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.96),
+            rgba(248,244,232,.96)
+        );
+    padding:26px 22px;
+    border-radius:24px;
+    border:1px solid rgba(212,175,55,.55);
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.10),
+        inset 0 0 0 1px rgba(255,255,255,.35);
+    text-align:center;
+    overflow:hidden;
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(212,175,55,.95),
+        transparent
+    );
+}
+
+.card h3{
+    margin-bottom:16px;
+    color:var(--blue);
+    font-size:1.2rem;
+}
+
+.card p{
+    margin-bottom:12px;
+    line-height:1.7;
+    font-size:1rem;
+    color:#3a3a3a;
+}
+
+.card p strong{
+    color:var(--red);
+    font-weight:600;
+}
+
+.dress{
+    text-align:center;
+    font-size:1.3rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:var(--gold);
+    color:black;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            180deg,
+            #d4af37 0%,
+            #f0d67a 45%,
+            #c79d2a 100%
+        );
+    text-align:center;
+    padding:60px 20px 70px;
+    color:#1e3a8a;
+    box-shadow:inset 0 8px 30px rgba(255,255,255,.18);
+}
+
+.footer::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(255,255,255,.18), transparent 18%),
+        radial-gradient(circle at 80% 75%, rgba(255,255,255,.14), transparent 20%);
+    pointer-events:none;
+}
+
+.footer-rose{
+    position:relative;
+    z-index:2;
+    width:72px;
+    height:72px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(255,255,255,.55),
+            rgba(255,255,255,.20) 35%,
+            rgba(255,255,255,.10) 65%,
+            rgba(255,255,255,.06) 100%
+        );
+    border:1px solid rgba(255,255,255,.45);
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,.25),
+        0 8px 20px rgba(0,0,0,.12);
+    backdrop-filter:blur(4px);
+}
+
+.footer-rose span{
+    font-size:2rem;
+    filter:drop-shadow(0 0 6px rgba(161,18,23,.35));
+}
+
+.name-footer{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+}
+
+.footer-first{
+    font-family:'Great Vibes', cursive;
+    font-size:3.2rem;
+    line-height:1;
+    color:#1e3a8a;
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.35),
+        0 0 10px rgba(255,255,255,.15);
+}
+
+.footer-last{
+    font-family:'Cinzel', serif;
+    font-size:1.1rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#8b0000;
+}
+
+.footer-text{
+    position:relative;
+    z-index:2;
+    margin-top:18px;
+    font-size:1rem;
+    color:#1e3a8a;
+    text-shadow:0 1px 0 rgba(255,255,255,.2);
+}
+
+.rose{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.magic-effects{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+.sparkle,
+.petal{
+    position:absolute;
+    top:-30px;
+    opacity:0;
+    animation:fall linear forwards;
+}
+
+.sparkle{
+    width:5px;
+    height:5px;
+    background:var(--gold);
+    border-radius:50%;
+    box-shadow:
+        0 0 8px rgba(212,175,55,.9),
+        0 0 18px rgba(212,175,55,.6);
+}
+
+.petal{
+    width:13px;
+    height:18px;
+    background:
+        radial-gradient(circle at 30% 30%,
+        #ff5a5f,
+        #a11217 65%,
+        #5c0508);
+    border-radius:80% 0 80% 0;
+    box-shadow:
+        0 0 8px rgba(161,18,23,.45);
+}
+
+@keyframes fall{
+
+    0%{
+        transform:translate3d(0,-30px,0) rotate(0deg);
+        opacity:0;
+    }
+
+    12%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate3d(var(--drift),110vh,0) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+.event-section{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(8,14,34,.88),
+            rgba(8,14,34,.93)
+        ),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.event-section .section-title::after{
+    content:'✦ ❦ ✦';
+    display:block;
+    margin-top:16px;
+    color:var(--gold);
+    font-size:.85rem;
+    letter-spacing:9px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.45),
+        0 0 14px rgba(212,175,55,.25);
+}
+
+.event-section::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255,255,255,.03),
+            transparent 18%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(255,255,255,.025),
+            transparent 20%
+        ),
+        linear-gradient(
+            rgba(6,12,32,.18),
+            rgba(6,12,32,.30)
+        );
+    opacity:1;
+}
+
+.event-section::after{
+    content:'';
+    position:absolute;
+    inset:18px;
+    z-index:1;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,.18);
+    box-shadow:
+        inset 0 0 18px rgba(255,255,255,.03),
+        0 0 24px rgba(0,0,0,.16);
+    pointer-events:none;
+}
+
+.event-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.event-section .section-title{
+    max-width:620px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:34px;
+    color:#fff8dc;
+    font-size:1.65rem;
+    line-height:1.45;
+    letter-spacing:2px;
+    text-shadow:
+        0 0 8px rgba(255,248,220,.35),
+        0 0 18px rgba(212,175,55,.22);
+}
+
+.event-section .card{
+    background:rgba(248,244,232,.94);
+    border:1px solid rgba(212,175,55,.75);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.22),
+        inset 0 0 0 1px rgba(255,255,255,.25);
+}
+
+.event-section .card h3{
+    color:var(--blue);
+}
+
+.event-section .card p{
+    color:#3b3b3b;
+}
+
+.event-section .card p strong{
+    color:var(--red);
+}
+
+.btn-map{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 22px;
+    border-radius:999px;
+    border:1px solid rgba(212,175,55,.75);
+    background:linear-gradient(
+        135deg,
+        #d4af37,
+        #f6d978,
+        #b88918
+    );
+    color:#1b1b1b;
+    text-decoration:none;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:1px;
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.18),
+        0 0 12px rgba(212,175,55,.22);
+    transition:.3s ease;
+}
+
+.btn-map:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.24),
+        0 0 18px rgba(212,175,55,.35);
+}
+
+.dress-section{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(6,12,32,.90),
+            rgba(6,12,32,.94)
+        ),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.dress-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.dress-title{
+    color:#fff8dc;
+    text-shadow:
+        0 0 8px rgba(255,248,220,.35),
+        0 0 18px rgba(212,175,55,.22);
+}
+
+.dress-card{
+    max-width:520px;
+    margin:0 auto;
+    padding:34px 26px;
+    text-align:center;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,.55);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    box-shadow:
+        0 16px 38px rgba(0,0,0,.32),
+        inset 0 0 22px rgba(212,175,55,.06);
+}
+
+.dress-icon{
+    color:var(--gold);
+    font-size:1.4rem;
+    letter-spacing:8px;
+    margin-bottom:14px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.55),
+        0 0 16px rgba(212,175,55,.35);
+}
+
+.dress{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    color:#f6d978;
+    margin-bottom:14px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.45),
+        0 0 16px rgba(212,175,55,.25);
+}
+
+.dress-text{
+    color:#fff8dc;
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.rsvp-section{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(6,12,32,.90),
+            rgba(6,12,32,.94)
+        ),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.rsvp-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.rsvp-title{
+    color:#fff8dc;
+    text-shadow:
+        0 0 8px rgba(255,248,220,.35),
+        0 0 18px rgba(212,175,55,.22);
+}
+
+.rsvp-card{
+    max-width:560px;
+    margin:0 auto;
+    padding:34px 26px;
+    text-align:center;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,.55);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    box-shadow:
+        0 16px 38px rgba(0,0,0,.32),
+        inset 0 0 22px rgba(212,175,55,.06);
+}
+
+.rsvp-icon{
+    color:var(--gold);
+    font-size:1.4rem;
+    letter-spacing:8px;
+    margin-bottom:16px;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.55),
+        0 0 16px rgba(212,175,55,.35);
+}
+
+.rsvp-text{
+    max-width:440px;
+    margin:0 auto 22px;
+    color:#fff8dc;
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.rsvp-btn{
+    margin-top:8px;
+}
+
+.story-section{
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(6,12,32,.90),
+            rgba(6,12,32,.94)
+        ),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.story-section .container{
+    position:relative;
+    z-index:2;
+}
+
+.story-title{
+    color:#fff8dc;
+    text-shadow:
+        0 0 8px rgba(255,248,220,.35),
+        0 0 18px rgba(212,175,55,.22);
+}
+
+.story-card{
+    max-width:620px;
+    margin:0 auto;
+    padding:34px 26px;
+    text-align:center;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,.55);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    box-shadow:
+        0 16px 38px rgba(0,0,0,.32),
+        inset 0 0 22px rgba(212,175,55,.06);
+}
+
+.story-icon{
+    font-size:2rem;
+    margin-bottom:16px;
+}
+
+.story-message{
+    color:#fff8dc;
+    font-size:1rem;
+    line-height:1.85;
+    margin-bottom:14px;
+}
+
+.story-message:last-child{
+    margin-bottom:0;
+}
+
+.family-block{
+    margin:28px auto;
+    padding:20px 16px;
+    border-top:1px solid rgba(212,175,55,.35);
+    border-bottom:1px solid rgba(212,175,55,.35);
+}
+
+.family-label{
+    color:var(--gold);
+    font-size:.9rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.family-names{
+    font-family:'Cormorant Garamond', serif;
+    color:#fff8dc;
+    font-size:1.45rem;
+    line-height:1.6;
+    text-shadow:
+        0 0 8px rgba(212,175,55,.25);
+}
+
+.music-btn{
+    position:fixed;
+    right:14px;
+    bottom:14px;
+    z-index:50;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    color:var(--gold);
+    font-size:.95rem;
+    font-weight:600;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(255,255,255,.35),
+            rgba(255,255,255,.10) 35%,
+            rgba(255,255,255,.03) 65%,
+            rgba(255,255,255,.02) 100%
+        );
+    backdrop-filter:blur(7px);
+    -webkit-backdrop-filter:blur(7px);
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.20),
+        inset 0 -6px 10px rgba(0,0,0,.10),
+        0 6px 18px rgba(0,0,0,.18),
+        0 0 10px rgba(212,175,55,.12);
+    transition:.3s ease;
+}
+
+.music-btn::before{
+    content:'';
+    position:absolute;
+    inset:4px;
+    border-radius:50%;
+    border:1px solid rgba(212,175,55,.28);
+    pointer-events:none;
+}
+
+.music-btn:hover{
+    transform:scale(1.05);
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.24),
+        inset 0 -6px 10px rgba(0,0,0,.12),
+        0 8px 20px rgba(0,0,0,.20),
+        0 0 12px rgba(212,175,55,.18);
+}
+
+.music-btn.playing{
+    color:#fff8dc;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(212,175,55,.32),
+            rgba(255,255,255,.10) 35%,
+            rgba(161,18,23,.12) 70%,
+            rgba(255,255,255,.03) 100%
+        );
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.24),
+        0 6px 18px rgba(0,0,0,.18),
+        0 0 12px rgba(212,175,55,.22);
+}
+
+@media(max-width:768px){
+
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.62)),
+        url('images/hero-mobile.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:95%;
+}
+
+.subtitle{
+    font-size:1rem;
+    letter-spacing:5px;
+    margin-bottom:32px;
+}
+
+.first-name{
+    font-size:5.2rem;
+    line-height:.8;
+}
+
+.last-name{
+    margin-top:10px;
+    font-size:1.35rem;
+    letter-spacing:6px;
+}
+
+.quote{
+    font-size:.9rem;
+    line-height:1.5;
+    margin-top:18px;
+}
+
+.ornament{
+    color:var(--gold);
+    font-size:1rem;
+    letter-spacing:8px;
+    margin:12px 0;
+}
+
+.date,
+.location{
+    font-size:.95rem;
+    letter-spacing:1px;
+}
+
+.countdown{
+    grid-template-columns:repeat(2, 1fr);
+    gap:14px;
+}
+
+.countdown-subtitle{
+    font-size:.9rem;
+    margin-bottom:28px;
+}
+
+.cards{
+    gap:16px;
+}
+
+.card{
+    padding:22px 18px;
+    border-radius:20px;
+}
+
+.card h3{
+    font-size:1.08rem;
+}
+
+.card p{
+    font-size:.95rem;
+    line-height:1.6;
+}
+
+.event-section .section-title{
+    font-size:1.35rem;
+    line-height:1.55;
+    letter-spacing:1.5px;
+    margin-bottom:28px;
+}
+
+.event-section .section-title::after{
+    font-size:.75rem;
+    letter-spacing:7px;
+}
+
+.dress-card{
+    padding:28px 20px;
+    border-radius:24px;
+}
+
+.dress{
+    font-size:1.7rem;
+}
+
+.dress-text{
+    font-size:.95rem;
+    line-height:1.7;
+}
+
+.rsvp-card{
+    padding:28px 20px;
+    border-radius:24px;
+}
+
+.rsvp-text{
+    font-size:.95rem;
+    line-height:1.7;
+}
+
+.story-card{
+    padding:28px 20px;
+    border-radius:24px;
+}
+
+.story-icon{
+    font-size:1.8rem;
+}
+
+.story-message{
+    font-size:.95rem;
+    line-height:1.75;
+}
+
+.family-block{
+    margin:24px auto;
+    padding:18px 12px;
+}
+
+.family-label{
+    font-size:.8rem;
+    letter-spacing:3px;
+}
+
+.family-names{
+    font-size:1.25rem;
+}
+
+.footer{
+    padding:52px 18px 62px;
+}
+
+.footer-rose{
+    width:64px;
+    height:64px;
+    margin-bottom:16px;
+}
+
+.footer-rose span{
+    font-size:1.8rem;
+}
+
+.footer-first{
+    font-size:2.5rem;
+}
+
+.footer-last{
+    font-size:.9rem;
+    letter-spacing:2px;
+    line-height:1.5;
+}
+
+.footer-text{
+    font-size:.95rem;
+    margin-top:16px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="magic-effects" aria-hidden="true"></div>
+
+<audio id="bgMusic" loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" type="button" aria-label="Activar música">
+    ▶
+</button>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="subtitle">MIS XV AÑOS</div>
+
+        <h1 class="name">
+            <span class="first-name">Sofía</span>
+            <span class="last-name">Guadalupe</span>
+        </h1>
+
+        <p class="quote">
+            "Hay momentos que brillan para siempre."
+            </p>
+            
+            <div class="ornament">
+            ✦ ✦ ✦
+            </div>
+            
+            <p class="date">
+            27 de junio de 2026
+            </p>
+            
+            <p class="location">
+            Jáltipan, Veracruz
+            </p>
+
+    </div>
+
+</section>
+
+<section class="section story-section">
+
+    <div class="container">
+
+        <h2 class="section-title story-title">
+            Una noche de cuento
+        </h2>
+
+        <div class="story-card">
+
+            <div class="story-icon">🌹</div>
+
+            <p class="message story-message">
+                Con la bendición de Dios y el amor de mi familia,
+                tengo la alegría de invitarte a celebrar mis XV años.
+            </p>
+
+            <p class="message story-message">
+                En este día tan especial, agradezco a mis padres
+                por su amor, guía y apoyo incondicional.
+            </p>
+
+            <div class="family-block">
+
+                <p class="family-label">Mis padres</p>
+
+                <p class="family-names">
+                    Jesus Angel Gonzalez Ramirez<br>
+                    Luisa Hernandez Alor
+                </p>
+
+            </div>
+
+            <div class="family-block">
+
+                <p class="family-label">Mis padrinos</p>
+
+                <p class="family-names">
+                    Joaquin Ballesteros Alor<br>
+                    Itzel Cruz Pavón
+                </p>
+
+            </div>
+
+            <p class="message story-message">
+                Será un honor compartir contigo una noche llena de magia,
+                sueños y recuerdos inolvidables.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section countdown-section">
+
+    <div class="container">
+
+        <h2 class="section-title countdown-title">
+            Faltan...
+        </h2>
+
+        <p class="countdown-subtitle">
+            Para vivir una noche llena de magia
+        </p>
+
+        <div class="countdown">
+
+            <div class="box">
+                <span id="days">0</span>
+                Días
+            </div>
+
+            <div class="box">
+                <span id="hours">0</span>
+                Horas
+            </div>
+
+            <div class="box">
+                <span id="minutes">0</span>
+                Minutos
+            </div>
+
+            <div class="box">
+                <span id="seconds">0</span>
+                Segundos
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section event-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Acompáñame en este día tan especial
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>⛪ Ceremonia Religiosa</h3>
+
+                <p><strong>Parroquia San Francisco de Asís</strong></p>
+
+                <p>
+                    Av. Gutiérrez Zamora 610, Centro,<br>
+                    Jáltipan de Morelos, Veracruz
+                </p>
+
+                <p><strong>5:00 PM</strong></p>
+                <a
+                    href="https://maps.app.goo.gl/Pq2qh8FVJXB2WuNN6"
+                    class="btn-map"
+                    target="_blank">
+                    Ver ubicación
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🎉 Recepción</h3>
+
+                <p><strong>Salón Imperial</strong></p>
+
+                <p>
+                    Av. Gutiérrez Zamora 1203, Centro,<br>
+                    Jáltipan de Morelos, Veracruz
+                </p>
+
+                <p><strong>6:00 PM</strong></p>
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20Imperial%20Av.%20Guti%C3%A9rrez%20Zamora%201203%20Centro%20J%C3%A1ltipan%20de%20Morelos%20Veracruz"
+                    class="btn-map"
+                    target="_blank">
+                    Ver ubicación
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section dress-section">
+
+    <div class="container">
+
+        <h2 class="section-title dress-title">
+            Código de Vestimenta
+        </h2>
+
+        <div class="dress-card">
+
+            <div class="dress-icon">✦</div>
+
+            <div class="dress">
+                Formal Elegante
+            </div>
+
+            <p class="dress-text">
+                Te invitamos a lucir tu mejor atuendo para acompañarme
+                en una noche llena de magia, elegancia y celebración.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section rsvp-section">
+
+    <div class="container">
+
+        <h2 class="section-title rsvp-title">
+            Confirmar Asistencia
+        </h2>
+
+        <div class="rsvp-card">
+
+            <div class="rsvp-icon">✦</div>
+
+            <p class="rsvp-text">
+                Tu presencia hará aún más especial esta noche.
+                Será un honor compartir contigo este momento tan importante.
+            </p>
+
+            <a
+                href="https://wa.me/529221780497?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20a%C3%B1os%20de%20Sof%C3%ADa%20Hern%C3%A1ndez.%20Mi%20nombre%20es%3A"
+                class="btn rsvp-btn"
+                target="_blank">
+                Confirmar por WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-rose">
+        <span>🌹</span>
+    </div>
+
+    <div class="name-footer">
+        <span class="footer-first">Sofía Guadalupe</span>
+        <span class="footer-last">Gonzalez Hernandez</span>
+    </div>
+
+    <p class="footer-text">
+        Gracias por ser parte de esta historia ✨
+    </p>
+
+</footer>
+
+<script>
+
+const targetDate =
+new Date("June 27, 2026 00:00:00").getTime();
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const distance = targetDate - now;
+
+    const days =
+    Math.floor(distance / (1000*60*60*24));
+
+    const hours =
+    Math.floor(
+    (distance % (1000*60*60*24))
+    / (1000*60*60));
+
+    const minutes =
+    Math.floor(
+    (distance % (1000*60*60))
+    / (1000*60));
+
+    const seconds =
+    Math.floor(
+    (distance % (1000*60))
+    / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+const magicContainer = document.querySelector(".magic-effects");
+
+function createMagicElement(){
+
+    const element = document.createElement("span");
+
+    const isPetal = Math.random() > 0.55;
+
+    element.className = isPetal ? "petal" : "sparkle";
+
+    element.style.left = Math.random() * 100 + "vw";
+
+    element.style.animationDuration =
+    (6 + Math.random() * 5) + "s";
+
+    element.style.setProperty(
+        "--drift",
+        (Math.random() * 160 - 80) + "px"
+    );
+
+    element.style.transform =
+    "scale(" + (0.7 + Math.random() * 0.8) + ")";
+
+    magicContainer.appendChild(element);
+
+    setTimeout(() => {
+        element.remove();
+    }, 11000);
+}
+
+setInterval(createMagicElement, 650);
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", function(){
+
+    if(!isPlaying){
+
+        music.play();
+
+        musicBtn.classList.add("playing");
+        musicBtn.innerHTML = "❚❚";
+
+        isPlaying = true;
+
+    }else{
+
+        music.pause();
+
+        musicBtn.classList.remove("playing");
+        musicBtn.innerHTML = "▶";
+
+        isPlaying = false;
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
